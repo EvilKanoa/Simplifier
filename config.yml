@@ -1,0 +1,23 @@
+commands:
+  talk:
+    description: Uses multiple broadcast/say commands to make sure people understand
+    permission: general.talk
+    help: /talk <message>
+    arguments: 1..
+    aliases: []
+    commands:
+    - "/say {args:1..}"
+    - "/bcast {args:1..}"
+    - "/me {args:1..}"
+    - "/asay {args:1..}"
+    - "{args:1..}"
+  promote:
+    description: A fancy version of /op
+    help: /promote <player> [message]
+    permission: general.promote
+    arguments: 1..
+    commands:
+    - "/op {args:1}"
+    - "/tell {args:1} You have been promoted! {args:2..}"
+    - "/say {sender} has promoted {args:1}!"
+    - "I have promoted {args:1}!"

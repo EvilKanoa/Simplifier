@@ -1,0 +1,3 @@
+name: Simplifier
+main: ca.kanoa.simplifier.Simplifier
+version: 0.1-a1
